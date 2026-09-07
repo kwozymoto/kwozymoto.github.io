@@ -1,0 +1,2 @@
+Serving from a dot-directory works. If this returns 404, .nojekyll has been
+removed and assetlinks.json will be silently dropped too. See README.md.

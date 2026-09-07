@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>kwozymoto</title>
+<meta name="description" content="Koine Greek — a free app for reading the Greek New Testament.">
+<meta name="theme-color" content="#141b2b">
+<style>
+  :root{
+    --ink:#eef2f8; --dim:#9fb0c8; --bg:#141b2b; --card:#1c2537;
+    --line:#2a364d; --gold:#e8c37a;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh; display:grid; place-items:center; padding:2rem 1.25rem;
+    background:var(--bg); color:var(--ink);
+    font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  main{max-width:34rem; width:100%}
+  .gk{
+    font-size:2.75rem; line-height:1.1; margin:0 0 .25rem;
+    color:var(--gold); font-weight:600; letter-spacing:.01em;
+  }
+  h1{font-size:1.1rem; font-weight:600; margin:0 0 1.5rem; color:var(--dim)}
+  a.card{
+    display:block; text-decoration:none; color:inherit;
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:1.1rem 1.25rem; transition:border-color .15s, transform .15s;
+  }
+  a.card:hover,a.card:focus-visible{border-color:var(--gold); transform:translateY(-1px)}
+  a.card:focus-visible{outline:2px solid var(--gold); outline-offset:2px}
+  a.card b{display:block; font-size:1.05rem; margin-bottom:.15rem}
+  a.card span{color:var(--dim); font-size:.92rem}
+  footer{margin-top:1.75rem; color:var(--dim); font-size:.85rem}
+  footer a{color:var(--dim)}
+</style>
+</head>
+<body>
+<main>
+  <p class="gk">Κοινή</p>
+  <h1>Koine Greek</h1>
+
+  <a class="card" href="/koine-greek/">
+    <b>Open the app &rsaquo;</b>
+    <span>The alphabet, frequency-ordered vocabulary on a review schedule,
+    the core paradigms, and the Greek New Testament with every word parsed.
+    Free, works offline, no account.</span>
+  </a>
+
+  <footer>
+    Source on <a href="https://github.com/kwozymoto/koine-greek">GitHub</a>.
+    Text: SBLGNT and MorphGNT. Glosses: Tyndale House TBESG and Dodson.
+  </footer>
+</main>
+</body>
+</html>
